@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.example
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Public assets
+/public/
+
+# Optional config files you don't want Prettier to touch
+.prettierignore
+
+# Optional: ignore logs
+*.log

@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev --turbopack",
+        "start": "next start",
+        "lint:ts": "npx eslint \"app/**/*.{ts,tsx}\"",
+        "lint:ts:fix": "npx eslint \"app/**/*.{ts,tsx}\" --fix",
+        "lint:css": "npx stylelint \"**/*.css\"",
+        "lint:css:fix": "npx stylelint \"**/*.css\" --fix",
+        "prettier": "prettier --write \"**/*.{ts,tsx,js,json}\""
+    },
+    "dependencies": {
+        "@heroicons/react": "^2.2.0",
+        "@tailwindcss/forms": "^0.5.10",
+        "autoprefixer": "10.4.20",
+        "bcrypt": "^5.1.1",
+        "clsx": "^2.1.1",
+        "next": "latest",
+        "next-auth": "5.0.0-beta.25",
+        "postcss": "8.5.1",
+        "postgres": "^3.4.6",
+        "react": "latest",
+        "react-dom": "latest",
+        "tailwindcss": "3.4.17",
+        "typescript": "5.7.3",
+        "use-debounce": "^10.0.4",
+        "zod": "^3.25.17"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/bcrypt": "^5.0.2",
+        "@types/node": "22.10.7",
+        "@types/react": "19.0.7",
+        "@types/react-dom": "19.0.3",
+        "eslint": "^10.2.1",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^17.5.0",
+        "jiti": "^2.6.1",
+        "prettier": "3.8.3",
+        "stylelint": "^17.9.0",
+        "stylelint-config-standard": "^40.0.0",
+        "stylelint-config-tailwindcss": "^1.0.1",
+        "typescript-eslint": "^8.59.0"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "bcrypt",
+            "sharp"
+        ]
+    }
+}
