@@ -35,9 +35,7 @@ export default async function InvoicesTable({
                                             />
                                             <p>{invoice.name}</p>
                                         </div>
-                                        <p className="text-sm text-gray-500">
-                                            {invoice.email}
-                                        </p>
+                                        <p className="text-sm text-gray-500">{invoice.email}</p>
                                     </div>
                                     <InvoiceStatus status={invoice.status} />
                                 </div>
@@ -115,9 +113,7 @@ export default async function InvoicesTable({
                                             <p>{invoice.name}</p>
                                         </div>
                                     </td>
-                                    <td className="whitespace-nowrap px-3 py-3">
-                                        {invoice.email}
-                                    </td>
+                                    <td className="whitespace-nowrap px-3 py-3">{invoice.email}</td>
                                     <td className="whitespace-nowrap px-3 py-3">
                                         {formatCurrency(invoice.amount)}
                                     </td>
@@ -125,9 +121,7 @@ export default async function InvoicesTable({
                                         {formatDateToLocal(invoice.date)}
                                     </td>
                                     <td className="whitespace-nowrap px-3 py-3">
-                                        <InvoiceStatus
-                                            status={invoice.status}
-                                        />
+                                        <InvoiceStatus status={invoice.status} />
                                     </td>
                                     <td className="whitespace-nowrap py-3 pl-6 pr-3">
                                         <div className="flex justify-end gap-3">
