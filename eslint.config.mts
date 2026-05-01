@@ -7,6 +7,11 @@ module.exports = defineConfig([
     {
         ignores: ['.next/**', 'node_modules/**', 'pnpm-lock.yaml'],
         files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+        settings: {
+            react: {
+                version: 'detect',
+            },
+        },
         languageOptions: {
             globals: {
                 browser: true,
