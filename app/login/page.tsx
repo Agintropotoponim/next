@@ -1,6 +1,17 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '@/app/ui/login-form';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+    title: 'Login',
+    description: 'Sign in to access your dashboard and manage your data securely.',
+
+    robots: {
+        index: false,
+        follow: false,
+    },
+};
 
 export default function LoginPage() {
     return (

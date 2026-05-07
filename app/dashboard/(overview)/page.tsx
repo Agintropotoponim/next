@@ -1,10 +1,20 @@
-import CardWrapper, { Card } from '@/app/ui/dashboard/cards';
-import RevenueChart from '@/app/ui/dashboard/revenue-chart';
+import CardWrapper from '@/app/ui/dashboard/cards';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
+import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
-import { Suspense } from 'react';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+    title: 'Home',
+    description: 'Overview of your account activity, analytics, and key metrics.',
+
+    robots: {
+        index: false,
+        follow: false,
+    },
+};
 
 export default async function Page() {
     return (
